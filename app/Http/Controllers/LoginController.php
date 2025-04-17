@@ -26,7 +26,7 @@ class LoginController extends Controller
 
         if ($user && Hash::check($request->password, $user->password)) {
             session(['user' => $user]);
-            return redirect()->route('dashboard');
+            return redirect()->route('dasboard');
         }
 
         return back()->with('error', 'Email atau Password salah.');

@@ -101,7 +101,7 @@ session_start();
                     <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="Masukkan Password anda" required>
                 </div>
-                <button type="submit" class="btn btn-warning w-100">Masuk</button>
+                <button type="submit" class="btn btn-warning w-100" href="/dasboard">Masuk</button>
             </form>
             <div class="text-center mt-3">
                 <span>Belum punya akun? <a href="{{ route('register') }}" class="text-danger">Daftar</a></span>
